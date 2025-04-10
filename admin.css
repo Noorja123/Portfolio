@@ -1,0 +1,228 @@
+/* Admin Panel Styles */
+.admin-container {
+    padding: 5rem 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f4ff, #e0e7ff);
+}
+
+.dark-theme .admin-container {
+    background: linear-gradient(135deg, #0f172a, #1e1b4b);
+}
+
+.admin-btn {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.admin-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.admin-login-section, .admin-dashboard {
+    background-color: var(--card-bg);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.admin-login-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.admin-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: var(--accent-blue);
+    border-bottom-color: var(--accent-blue);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.stat-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon i {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+}
+
+.stat-content h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.stat-content p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-blue);
+}
+
+.admin-section {
+    margin-bottom: 3rem;
+}
+
+.admin-section h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.admin-table-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.admin-table th {
+    font-weight: 600;
+    color: var(--text-primary);
+    background-color: var(--bg-secondary);
+}
+
+.admin-table tr:hover {
+    background-color: var(--bg-secondary);
+}
+
+.btn-edit, .btn-delete {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-edit {
+    background-color: var(--accent-blue);
+    color: white;
+}
+
+.btn-delete {
+    background-color: var(--accent-red);
+    color: white;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    opacity: 0.9;
+}
+
+.admin-form {
+    max-width: 800px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.cancel-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background-color: var(--card-border);
+}
+
+.success-message, .error-message {
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1.5rem;
+}
+
+.success-message {
+    background-color: rgba(34, 197, 94, 0.1);
+    color: var(--accent-green);
+}
+
+.error-message {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--accent-red);
+}
+
+.add-post-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--card-border);
+}
+
